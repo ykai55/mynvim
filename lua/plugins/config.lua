@@ -19,13 +19,13 @@ return {
           hide_dotfiles = false,
           hide_gitignored = false,
           hide_by_name = {
-            '.git',
-            '.DS_Store',
-            'thumbs.db',
+            ".git",
+            ".DS_Store",
+            "thumbs.db",
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
 
   -- add more treesitter parsers
@@ -52,16 +52,21 @@ return {
   },
 
   {
-    'akinsho/bufferline.nvim',
+    "akinsho/bufferline.nvim",
     -- enabled = false
   },
 
   {
     "folke/noice.nvim",
     opts = {
-      -- cmdline = {
-      --   enabled = false,
-      -- },
+      cmdline = {},
     },
-  }
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      autoformat = false,
+    },
+  },
 }
