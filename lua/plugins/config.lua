@@ -58,15 +58,6 @@ return {
 
   {
     "folke/noice.nvim",
-    opts = {
-      cmdline = {},
-    },
-  },
-
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      autoformat = false,
-    },
+    enabled = false,
   },
 }
