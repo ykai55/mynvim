@@ -64,5 +64,19 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {},
-  }
+  },
+
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      opts.window = {
+        completion = {
+          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+        },
+        documentation = {
+          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+        },
+      }
+    end,
+  },
 }
